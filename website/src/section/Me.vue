@@ -20,7 +20,7 @@ div {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 700px;
+  height: 1000px;
   background-image: url("../assets/pattern/rainbow-vortex.svg");
   background-size: cover;
 }

@@ -48,7 +48,7 @@ export default {
 article {
   background: rgba(0,0,0,0.7);
   padding: 30px;
-  border-radius: 30px
+  border-radius: 30px;
 }
 p {
   font-size: clamp(18px, 1.2vw, 1.2vw);

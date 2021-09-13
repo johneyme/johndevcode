@@ -1,40 +1,46 @@
 <template>
-  <div>
-    <ProjectModule class="project-module" />
+  <div class="work-container">
+    <h1>Réalisations</h1>
+    <div class="project-holder">
+      <ProjectModule class="module"/>
+    </div>
   </div>
 </template>
 
 <script>
-import ProjectModule from "../components/ProjectModule.vue";
+import ProjectModule from "../components/ProjectModule";
 export default {
   name: "Work",
-  components: { ProjectModule },
+  components: {
+    ProjectModule,
+  },
 };
 </script>
 
 <style scoped>
-div {
+.work-container {
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
-  background-image: url("../assets/pattern/wavey-fingerprint.svg");
-  
+  background: url("../assets/pattern/wavey-fingerprint.svg");
 }
 h1 {
-  margin-top: 1em;
-  text-align: center;
+  font-size: 3em;
+  margin-top: 100px
+
 }
-.description {
-  width: 60vw;
+.module {
+  margin-bottom: 10em;
+  transition: box-shadow 0.4s ease-in-out;
+}
+.module:hover {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-holder {
+  margin-top: 2em;
 }
 @media (max-width: 700px) {
-  div {
-    padding: 4em 0em;
-  }
-  .description {
-    text-align: justify;
-    width: 90vw;
-  }
+  
 }
 </style>
