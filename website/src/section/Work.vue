@@ -1,15 +1,14 @@
-
 <template>
   <div>
-    <Description class="description" />
+    <ProjectModule class="project-module" />
   </div>
 </template>
 
 <script>
-import Description from "../components/Description";
+import ProjectModule from "../components/ProjectModule.vue";
 export default {
-  name: "Me",
-  components: { Description },
+  name: "Work",
+  components: { ProjectModule },
 };
 </script>
 
@@ -19,10 +18,8 @@ div {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 700px;
-  background-image: url("../assets/pattern/rainbow-vortex.svg");
-  background-size: cover;
+  background-image: url("../assets/pattern/wavey-fingerprint.svg");
+  
 }
 h1 {
   margin-top: 1em;
@@ -34,8 +31,6 @@ h1 {
 @media (max-width: 700px) {
   div {
     padding: 4em 0em;
-    width: auto;
-    height: auto;
   }
   .description {
     text-align: justify;
