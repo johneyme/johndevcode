@@ -1,18 +1,16 @@
 <template>
-<div id="app">
-  <!--<Menu />-->
-  <Home id="home" class="section" />
-  <Me id="me" class="section" />
-  <Work id="work" class="section" />
-  <FindMe id="find-me" class="section" />
-  <FooterCurve id="footer-curve" class="section" />
- 
- </div>
+  <div id="app">
+    <!--<Menu />-->
+    <Home id="home" class="section" />
+    <Me id="me" class="section" />
+    <Work id="work" class="section" />
+    <FindMe id="find-me" class="section" />
+    <FooterCurve id="footer-curve" class="section" />
+  </div>
 </template>
 
 <script>
-
-import Home from './section/Home.vue'
+import Home from "./section/Home.vue";
 import Me from "./section/Me";
 import Work from "./section/Work";
 import FindMe from "./section/FindMe";
@@ -21,30 +19,29 @@ import FooterCurve from "./section/FooterCurve";
 import Menu from './components/Menu.vue'*/
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Home,
     Me,
     Work,
     FindMe,
-    FooterCurve, 
+    FooterCurve,
     /*Menu, 
      
      
     
     */
-  }
-}
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap");;
 
 * {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
 }
 
 body {
@@ -56,5 +53,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 
 </style>

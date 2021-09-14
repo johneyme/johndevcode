@@ -1,7 +1,7 @@
 <template>
   <div class="find-me-icons-main-container" @click="openLink">
     <div class="find-me-icons-header">
-      <img :src="require(`../assets/icons/${title}-white.svg`)" :alt="title" />
+      <img :src="require(`../assets/icons/${title}.svg`)" :alt="title" />
       <div class="horizontal-divider"></div>
       <strong> {{ title }} </strong>
     </div>
@@ -15,16 +15,16 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     content: {
       type: String,
-      required: true
+      required: true,
     },
     link: {
       type: String,
-      required: false
-    }
+      required: false,
+    },
   },
   methods: {
     openLink() {
@@ -32,12 +32,13 @@ export default {
         return;
       }
       window.open(this.link, "_blank", "noopener");
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
+
 .horizontal-divider {
   width: 1px;
   background-color: #313131;
@@ -72,7 +73,7 @@ img {
   transition: opacity 0.2s ease-in-out;
 }
 strong {
-  font-size: clamp(16px, 1.1vw, 1.1vw);
+  font-size: clamp(25px, 1.1vw, 1.1vw);
   opacity: 0.5;
   transition: opacity 0.2s ease-in-out;
 }

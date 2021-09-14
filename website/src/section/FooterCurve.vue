@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer>
-        <img src="../assets/logo/johndevcodelogo.png">
+      <img src="../assets/logo/johndevcodelogo.png" />
       <div class="vertical-divider"></div>
       <h1>John E.</h1>
     </footer>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "FooterCurve"
+  name: "FooterCurve",
 };
 </script>
 
@@ -31,7 +31,7 @@ footer {
   background-color: #1c1c1c;
 }
 img {
-  width: clamp(42px, 8vw, 120px);
+  width: 300px;
 }
 h1 {
   color: #1c1c1c;
@@ -39,11 +39,16 @@ h1 {
   transition: color 0.3s ease-in-out;
 }
 h1:hover {
-  color: #000000;
+  color: #ffb224;
 }
 @media (max-width: 700px) {
   footer {
     width: 100vw;
   }
- }
+  img {
+    width: 100px
+  }
+   
+  
+}
 </style>

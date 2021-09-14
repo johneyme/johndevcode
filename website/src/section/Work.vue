@@ -2,7 +2,7 @@
   <div class="work-container">
     <h1>Réalisations</h1>
     <div class="project-holder">
-      <ProjectModule class="module"/>
+      <ProjectModule class="module" />
     </div>
   </div>
 </template>
@@ -26,8 +26,7 @@ export default {
 }
 h1 {
   font-size: 3em;
-  margin-top: 100px
-
+  margin-top: 100px;
 }
 .module {
   margin-bottom: 10em;
@@ -39,8 +38,5 @@ h1 {
 
 .project-holder {
   margin-top: 2em;
-}
-@media (max-width: 700px) {
-  
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-
   <article class="project-container">
     <header>
       <div class="title-type">
@@ -8,16 +7,18 @@
       </div>
       <div class="custom-icons"></div>
     </header>
-    <p>Site E-commerce de vente d'illustration numérique avec un système de personnalisation "à la carte".
+    <p>
+      Site E-commerce de vente d'illustration numérique avec un système de
+      personnalisation "à la carte".
     </p>
-    <img src="../assets/images/jolitoi.png" alt="" class="cover-image">
+    <img src="../assets/images/jolitoi.png" alt="" class="cover-image" />
     <a href="https://jolitoi.fr/">
       <button class="more">
         <span> Voir plus </span>
       </button></a
     >
   </article>
-  
+
   <article class="project-container">
     <header>
       <div class="title-type">
@@ -26,13 +27,16 @@
       </div>
       <div class="custom-icons"></div>
     </header>
-    <p>Site vitrine pour un agent immobilier. Avec une gestion des biens à vendre, consultable pour un client.
+    <p>
+      Site vitrine pour un agent immobilier. Avec une gestion des biens à
+      vendre, consultable pour un client.
     </p>
-    <img src="../assets/images/jsi.png" alt="" class="cover-image">
+    <img src="../assets/images/jsi.png" alt="" class="cover-image" />
     <a href="https://juliensolbes-immobilier.fr/">
       <button class="more">
         <span> Voir plus </span>
-      </button></a>
+      </button></a
+    >
   </article>
   <article class="project-container">
     <header>
@@ -42,65 +46,21 @@
       </div>
       <div class="custom-icons"></div>
     </header>
-    <p>Jeux du serpent jouable directement sur son navigateur. Codé en Javascript
+    <p>
+      Jeux du serpent jouable directement sur son navigateur. Codé en Javascript
     </p>
-    <img src="../assets/images/snakegame.png" alt="" class="cover-image">
+    <img src="../assets/images/snakegame.png" alt="" class="cover-image" />
     <a href="https://johneyme.github.io/SnakeGame/">
       <button class="more">
         <span> Voir plus </span>
-      </button></a>
+      </button></a
+    >
   </article>
-
-  
 </template>
 
 <script>
 export default {
   name: "ProjectModule",
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    content: {
-      content: {
-        type: String,
-        required: false,
-      },
-    },
-    preview: {
-      type: Object,
-      required: true,
-    },
-    coverImage: {
-      type: String,
-      required: true,
-    },
-    type: {
-      type: String,
-      required: true,
-    },
-    read: {
-      type: String,
-      required: false,
-    },
-  },
-  computed: {
-    projectName() {
-      let projectName = this.title;
-      projectName = projectName.charAt(0).toUpperCase() + projectName.slice(1);
-      projectName = projectName.replace(/_/g, " ");
-      return projectName;
-    },
-  },
-  methods: {
-    readMore() {
-      window.open(this.read, "_blank", "noopener");
-    },
-    emitImage() {
-      this.$emit("emitImage", this.coverImage);
-    },
-  },
 };
 </script>
 
@@ -115,7 +75,7 @@ export default {
   color: #1c1c1c;
   width: 70vw;
   max-width: 1000px;
-  margin-bottom: 100px
+  margin-bottom: 150px;
 }
 header {
   display: flex;
@@ -144,7 +104,7 @@ p {
   width: 100%;
   border-radius: 40px;
   cursor: pointer;
-  border:gray solid 2px;
+  border: gray solid 1px;
   box-shadow: 2px 2px 2px gray;
 }
 .type-meta {
@@ -210,7 +170,7 @@ p {
 @media (max-width: 700px) {
   .project-container {
     padding: 1em 1em 2em 1em;
-    width: 90vw;
+    width: 85vw;
     border-radius: 15px;
   }
   .cover-image {
