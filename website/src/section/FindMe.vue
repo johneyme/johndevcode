@@ -24,6 +24,12 @@
           content="404Works"
           link="https://www.404works.com/fr/profile/johndevcode"
         />
+        <FindMeIcons
+          title="malt"
+          content="JohnDevCode"
+          link="https://www.malt.fr/profile/johndevcode"
+        />
+        
       </div>
     </div>
   </div>
